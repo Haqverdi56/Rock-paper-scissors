@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;600;700;900&family=Epilogue:wght@400;500;599;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+#section-up {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1rem ;
+    width: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.289199);
+    border-radius: 15px;
+    #score {
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 2.5px;
+        padding: 0 1.5rem;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+        border-radius: 8px;
+        color: #2A45C2;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        #score-count {
+            font-size: 3rem;
+            display: inline-block;
+            color: #565468;
+        }
+    }
+}
+#section-down {
+    display: flex;
+    justify-content: center;
+    .sub-section-down {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33%;
+        gap: 3rem;
+        justify-content: center;
+        .rock-blue {
+            background: #4664F4;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            .rock-white {
+                background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+                border-radius: 50%;
+                padding: 1.3rem;
+            }
+            &:hover {
+                box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+            }
+        }
+        .rock-orange {
+            background: #EB9F0E;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            .rock-white {
+                background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+                border-radius: 50%;
+                padding: 1.3rem;
+            }
+            &:hover {
+                box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+            }
+        }
+        .rock-red {
+            background: #DB2E4D;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            .rock-white {
+                background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+                border-radius: 50%;
+                padding: 1.3rem;
+            }
+            &:hover {
+                box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+            }
+        }
+    }
+}
+
+.pick-paper {
+    background: #4664F4;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 9rem;
+    height: 10rem;
+    cursor: pointer;
+    .pick-white {
+        background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+    }
+}
+.pick-scissors {
+    background: #EB9F0E;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 9rem;
+    height: 10rem;
+    cursor: pointer;
+    .pick-white {
+        background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+    }
+}
+.pick-rock {
+    background: #DB2E4D;
+    padding: 1.5rem 1.2rem;
+    border-radius: 50%;
+    width: 9rem;
+    height: 10rem;
+    cursor: pointer;
+    .pick-white {
+        background: linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
+        border-radius: 50%;
+        padding: 1.3rem;
+    }
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px, rgba(0, 0, 0, .5) 0px 0px 50px;
+    }
+}
+
+.game {
+    display: none;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.result {
+    color: white;
+}
+
+.play-again {
+    padding: 10px 30px;
+    color: black;
+    border-radius: 10px;
+}
