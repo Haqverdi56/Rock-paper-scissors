@@ -46,7 +46,7 @@ function gameStart() {
     || userChoice === 'scissors' && compChoice === 'paper'){
         //user win
         document.getElementById('win').innerText = 'WIN'
-        scoreFunc(2)
+        scoreFunc(1)
         console.log(userChoice, compChoice);
     } else {
         //lose
