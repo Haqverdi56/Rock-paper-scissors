@@ -13,6 +13,7 @@ let score = 0;
 let compChoice;
 
 gameDiv.style.display = 'none'
+scoreValue.innerText = window.localStorage.getItem("highScore");
 
 buttons.forEach(button => {
     button.addEventListener('click', ()=>{
@@ -28,7 +29,8 @@ buttons.forEach(button => {
         let compClass = compPick.className = `pick-${compChoice}`;
         document.getElementById('comp-img').src = `assests/${compChoice}.svg`
         console.log(compClass);
-        gameStart()
+        gameStart();
+        fromLocalStorage();
     })
 });
 
@@ -37,6 +39,8 @@ gameRestart.addEventListener('click',function() {
 })
 
 function gameStart() {
+    scoreValue.innerText = window.localStorage.getItem("highScore");
+    fromLocalStorage();
     if(userChoice === compChoice) {
         //draw
         document.getElementById('win').innerText = 'DRAW'
@@ -70,3 +74,8 @@ function playAgain() {
     mainDiv.style.display = 'flex'
     gameDiv.style.display = 'none'
 }
+
+const fromLocalStorage = () => {
+    window.localStorage.setItem("highScore", scoreValue.innerText);
+};
+fromLocalStorage();
